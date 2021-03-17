@@ -6,11 +6,18 @@ import {
 } from 'react';
 
 import { useField } from '@unform/core';
+import { IconBaseProps } from 'react-icons';
 
 import { Container } from './styles';
 
-const Input = ({ name, icon: Icon, ...rest }) => {
-  const inputRef = useRef(null);
+interface InputProps {
+  name: string;
+  placeholder?:string;
+  icon?: React.ComponentType<IconBaseProps>;
+}
+
+const Input = ({ name, icon: Icon, ...rest }:InputProps) => {
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);

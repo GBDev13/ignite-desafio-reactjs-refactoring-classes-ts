@@ -23,6 +23,14 @@
       "price": "25.90",
       "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
+      "name": "A La Sucon 2.0",
+      "price": "69.99",
+      "description": "La suco mais bueno",
+      "available": false,
+      "id": 4
     }
   ]
 }
